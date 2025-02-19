@@ -1,4 +1,4 @@
-/* Navbar.module.css */
+
 .navbar {
     background-color: var(--primary-bg, #333);
     padding: 15px;
@@ -36,7 +36,7 @@
     border-radius: 5px;
 }
 
-/* Dark Mode Button */
+
 .toggle-btn {
     background: none;
     border: 2px solid var(--primary-text, white);
