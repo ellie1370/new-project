@@ -1,4 +1,4 @@
-/* Center Content */
+
 .center-content {
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   margin-top: 2rem;
 }
 
-/* Improve Main Title */
+
 .main-title {
   font-size: 2rem;
   font-weight: bold;
@@ -17,7 +17,7 @@
   margin-bottom: 1rem;
 }
 
-/* Search & Filter Section */
+
 .filter-container {
   display: flex;
   justify-content: center;
@@ -41,7 +41,7 @@
   border-color: #007bff;
 }
 
-/* Dropdown Filter */
+
 .filter-dropdown {
   padding: 10px;
   font-size: 16px;
@@ -50,7 +50,7 @@
   background: white;
 }
 
-/* Reset Button */
+
 .reset-btn {
   padding: 10px 15px;
   font-size: 16px;
@@ -66,7 +66,7 @@
   background-color: darkred;
 }
 
-/* About Section */
+
 .about-container {
   background-color: var(--card-bg);
   padding: 1.5rem;
@@ -82,7 +82,7 @@
   line-height: 1.5;
 }
 
-/* Light Mode (Default) */
+
 :root {
   --primary-bg: white;
   --primary-text: black;
@@ -90,7 +90,7 @@
   --card-text: black;
 }
 
-/* Dark Mode */
+
 .dark-mode {
   --primary-bg: #1a1a1a;
   --primary-text: white;
@@ -98,14 +98,14 @@
   --card-text: white;
 }
 
-/* Apply Dark Mode */
+
 body {
   background-color: var(--primary-bg);
   color: var(--primary-text);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Navbar Styling */
+
 .navbar {
   background-color: var(--primary-bg, #333);
   padding: 15px;
