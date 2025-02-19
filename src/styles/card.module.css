@@ -1,4 +1,4 @@
-/* Card.module.css */
+
 .profileCard {
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@
     opacity: 0;
 }
 
-/* Fade-in Animation */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -30,7 +30,7 @@
     animation: fadeIn 1s forwards;
 }
 
-/* Hover Effect */
+
 .profileCard:hover {
     transform: scale(1.05);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
