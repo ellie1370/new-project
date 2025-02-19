@@ -37,7 +37,7 @@ const App = () => {
       <main className="center-content">
         <h1 className="main-title">Profile App</h1>
 
-        {/* Search and Filter Section */}
+       
         <div className="filter-container">
           <input
             type="text"
@@ -64,13 +64,13 @@ const App = () => {
           </button>
         </div>
 
-        {/* About Section */}
+        
         <div className="about-container">
           <h2>About</h2>
           <p className="about-text">This is a simple profile app that allows users to filter and search profiles easily.</p>
         </div>
 
-        {/* Profiles */}
+       
         <Wrapper>
           <div className="profile-container">
             {filteredProfiles.length > 0 ? (
