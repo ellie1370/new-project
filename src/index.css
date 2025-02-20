@@ -1,4 +1,48 @@
+/* Global Variables */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Theme Colors */
+  --primary-bg: #f9f9f9;
+  --primary-text: #333;
+  --button-bg: #007bff;
+  --button-hover-bg: #0056b3;
+  --card-bg: #ffffff;
+  --card-text: #333;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --primary-bg: #1a1a1a;
+  --primary-text: white;
+  --card-bg: #333;
+  --card-text: white;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Centered Content */
 .center-content {
   display: flex;
   flex-direction: column;
@@ -9,7 +53,7 @@
   margin-top: 2rem;
 }
 
-
+/* Main Title */
 .main-title {
   font-size: 2rem;
   font-weight: bold;
@@ -17,7 +61,7 @@
   margin-bottom: 1rem;
 }
 
-
+/* Filter Container */
 .filter-container {
   display: flex;
   justify-content: center;
@@ -28,6 +72,7 @@
   max-width: 600px;
 }
 
+/* Search Bar */
 .search-bar {
   flex: 1;
   padding: 10px;
@@ -38,10 +83,10 @@
 
 .search-bar:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: var(--button-bg);
 }
 
-
+/* Filter Dropdown */
 .filter-dropdown {
   padding: 10px;
   font-size: 16px;
@@ -50,7 +95,7 @@
   background: white;
 }
 
-
+/* Reset Button */
 .reset-btn {
   padding: 10px 15px;
   font-size: 16px;
@@ -66,7 +111,7 @@
   background-color: darkred;
 }
 
-
+/* About Section */
 .about-container {
   background-color: var(--card-bg);
   padding: 1.5rem;
@@ -82,30 +127,7 @@
   line-height: 1.5;
 }
 
-
-:root {
-  --primary-bg: white;
-  --primary-text: black;
-  --card-bg: #f9f9f9;
-  --card-text: black;
-}
-
-
-.dark-mode {
-  --primary-bg: #1a1a1a;
-  --primary-text: white;
-  --card-bg: #333;
-  --card-text: white;
-}
-
-
-body {
-  background-color: var(--primary-bg);
-  color: var(--primary-text);
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-
+/* Navbar */
 .navbar {
   background-color: var(--primary-bg, #333);
   padding: 15px;
@@ -118,36 +140,52 @@ body {
   list-style: none;
   display: flex;
   gap: 20px;
-  margin: 0;
-  padding: 0;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: var(--primary-text, white);
-  font-size: 18px;
-  padding: 10px 15px;
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-/* Toggle Button */
-.toggle-btn {
-  background: none;
-  border: 2px solid var(--primary-text, white);
-  color: var(--primary-text, white);
-  padding: 5px 10px;
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: white;
   cursor: pointer;
-  font-size: 14px;
-  border-radius: 5px;
-  transition: 0.3s;
+  transition: background-color 0.25s;
 }
 
-.toggle-btn:hover {
-  background-color: white;
-  color: black;
+button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }
