@@ -2,7 +2,7 @@ import Wrapper from "../Components/Wrapper";
 import ProfileForm from "../Components/ProfileForm";
 
 
-const AddProfilePage = () => {
+const AddProfile= () => {
 
   return (
         <Wrapper>
@@ -12,4 +12,4 @@ const AddProfilePage = () => {
   );
 };
 
-export default AddProfilePage;
+export default AddProfile;
