@@ -3,8 +3,7 @@ import AuthForm from "../Components/AuthForm";
 import { Link } from "react-router-dom";
 import styles from "../styles/login.module.css";
 
-
-const LoginPage= () => {
+const Login = () => {
 
     return (
         <Wrapper>
@@ -15,4 +14,4 @@ const LoginPage= () => {
     );
 }
 
-export default LoginPage;
+export default Login;

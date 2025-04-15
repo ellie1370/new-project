@@ -1,19 +1,22 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 
 const ModeContext = createContext();
 
 export const ModeProvider = ({ children }) => {
-    const [mode, setMode] = useState("light");
+      //Variable to store the mode state
+      const [mode, setMode] = useState("light");
+      //function to update the mode state
+      const handleModeChange = () => {
+        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+      };
 
-    const handleModeChange = () => {
-        setMode(prevMode => (prevMode === "light" ? "dark" : "light"));
-    };
-
-    return (
+      return (
         <ModeContext.Provider value={{ mode, handleModeChange }}>
-            {children}
+          {children}
         </ModeContext.Provider>
-    );
-};
+      )
 
+};
 export default ModeContext;
+
+export const useMode = () => useContext(ModeContext);

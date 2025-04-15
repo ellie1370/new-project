@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../contexts/AuthContext";
+import { useAuth } from "../contexts /AuthContext";
 
 function useAuthForm(isRegister){
     const { login } = useAuth();
@@ -28,7 +28,7 @@ function useAuthForm(isRegister){
     
         try {
           const response = await fetch(
-            "https://web.ics.purdue.edu/~park1843/new-project/auth.php",
+            "https://web.ics.purdue.edu/~zong6/profile-app/auth.php",
             {
               method: "POST",
               body: formData,

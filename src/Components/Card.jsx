@@ -1,5 +1,6 @@
 import style from "../styles/card.module.css";
 import PropTypes from "prop-types";
+import { useRef, useEffect, memo } from "react";
 
 const Card = ({ image_url, name, title, email }) => {
   return (
