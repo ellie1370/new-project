@@ -14,6 +14,10 @@ import { useMode } from "./contexts /ModeContext";
 import { lazy, Suspense } from "react";
 import { AuthProvider } from "./contexts /AuthContext";
 import ProtectedRoute from "./Components/ProtectedRoute";
+import Chatbot from "./Components/Chatbox";
+
+
+
 
 const App = () => {
 
@@ -42,6 +46,8 @@ const App = () => {
             <Route path="/register" element={<RegisterPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Chatbot />
+
         </main>
       </HashRouter>
     </AuthProvider>
